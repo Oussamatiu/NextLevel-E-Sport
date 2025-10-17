@@ -98,6 +98,9 @@ body {
 
 /* Hero Section */
 .hero {
+  background-image: url(public/tactical-shooter-esport-tournament-with-purple-neo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -265,12 +268,84 @@ body {
 .section-dark {
   background: rgba(15, 15, 25, 0.5);
 }
-
+.centrer{
+    text-align:left ;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
 }
 
+label , input ,textarea{
+  margin-bottom: 15px;
+  margin-right: 35px;
+  width: 180px;
+  border-radius: 1px;
+  font-family: "Orbitron", sans-serif;
+  
+} 
+.details {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  gap: 30px;
+}
+.details .imge {
+  
+   background-color: #a0a0a0;
+   width: auto;
+   height: 500px;
+}
+
+input , textarea {
+  background-color: #1E1E35;
+
+}
+
+form {
+   align-items: center;
+   max-width: fit-content;
+   margin-left: auto;
+   margin-right: auto;
+}
+form button{
+  margin: auto;
+  font-family: "Orbitron", sans-serif;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  padding: 8px 12px;
+}
+input,textarea:focus{
+  color: #ffffff;
+}
+form button:hover{
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
+.form-control{
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+.form-control input, textarea {
+  outline: none;
+  border: none;
+  height: 30px;
+  width: 100%;
+  border-radius: 8px;
+}
 .section-title {
   font-family: "Orbitron", sans-serif;
   font-size: 3rem;
@@ -391,6 +466,10 @@ body {
   padding-top: 1.5rem;
   border-top: 1px solid rgba(59, 130, 246, 0.2);
 }
+.infos-team {
+  display: grid;
+  grid-template-rows: auto;
+}
 
 .info-item {
   display: flex;
@@ -398,6 +477,15 @@ body {
   gap: 0.5rem;
   font-size: 0.875rem;
   color: #a0a0a0;
+}
+.sous-info{
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  
 }
 
 .info-icon {
@@ -730,10 +818,11 @@ body {
   padding: 4rem 0 2rem;
 }
 
+
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns:  1fr 3fr ;
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -776,6 +865,11 @@ body {
   width: 20px;
   height: 20px;
 }
+.footer-links{
+ display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: auto;
+}
 
 .footer-heading {
   font-family: "Orbitron", sans-serif;
@@ -794,6 +888,7 @@ body {
 }
 
 .footer-link {
+  
   color: #a0a0a0;
   text-decoration: none;
   transition: color 0.3s ease;
